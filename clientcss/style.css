@@ -1,0 +1,243 @@
+body{
+
+  background-color: #85e9c3;
+  width: 100%;
+  position: relative;
+}
+main{
+  background-color: rgba(183, 241, 171, 0);
+}
+
+
+
+.table{
+  color: aliceblue;
+}
+
+header h1 {
+  display: inline-block;
+  margin: 10px 0;
+}
+header + hr {
+  margin: 10px 0;
+}
+#contacts p, 
+#contacts p.lead{
+  margin: 0;
+}
+.userAuth {
+  display: block;
+  margin: 50px 0 0;
+}
+.modal-header:last-child{
+  border-bottom: 0;
+}
+
+#contacts {
+  margin-left: -1em;
+  margin-right: -1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.auth-true .authenticated,
+.auth-false .unauthenticated {
+  display: block;
+}
+.auth-true .unauthenticated,
+.auth-false .authenticated {
+display: none;
+
+}
+
+
+
+
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ background-color: rgba(0, 0, 0, 0.877);
+  z-index: 2;
+  cursor: pointer;
+  -webkit-animation: mymove 5s infinite; 
+  animation: mymove 5s infinite;
+
+}
+
+
+
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f300;
+  border-radius: 50%;
+  border-top: 16px solid #3498db00;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+#nav1{
+  box-shadow: 0 8px 8px 0 rgba(0, 0.2, 0, 0.2), 0 20px 20px 0 rgba(0, 0.19, 0, 0.19);
+
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 34), rgb(17, 125, 226));
+  height: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px; 
+
+}
+#nav2{
+  background-color: rgba(238, 255, 0, 0); 
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 34), rgb(17, 125, 226)); 
+  padding: 10px;
+  box-shadow: 5px 10px 50px #0e0d0d;
+  height: 50px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#nav3{
+  background-color: rgba(238, 255, 0, 0); 
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 34), rgb(17, 125, 226)); 
+
+  box-shadow: 5px 10px 50px #0e0d0d;
+  height: 80px;
+
+ 
+}
+h6{
+  color: whitesmoke
+}
+#myForm{
+  background-color: rgba(238, 255, 0, 0); 
+  background-image: linear-gradient(to bottom right, rgb(0, 255, 34), rgb(17, 125, 226)); 
+  padding: 10px;
+  box-shadow: 5px 10px 50px #0e0d0d;
+z-index: 2;
+
+
+
+}
+.highcharts-figure .chart-container {
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+  width: 300px;
+  margin:  auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+@media (max-width: 600px) {
+  .highcharts-figure,
+  .highcharts-data-table table {
+    width: 100%;
+  }
+
+  .highcharts-figure .chart-container {
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+  }
+}
+

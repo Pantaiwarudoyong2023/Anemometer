@@ -1,0 +1,40 @@
+#map{
+
+    height: 600px;
+   
+    border: 2px solid grey;
+    
+  }
+  
+  .animated-icon_1,
+  .animated-icon_2,
+  .animated-icon_3,
+  .animated-icon_4{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px white;
+    transition: all 1s;
+  }
+  
+  
+  .inner-icon_1,
+  .inner-icon_2,
+  .inner-icon_3,
+  .inner-icon_4{
+    width: 10px;
+    height: 10px;
+    background-color: powderblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:1px solid black;
+  }
+  
+  
+  
+ 
